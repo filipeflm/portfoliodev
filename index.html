@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Profissional | Filipe Franco</title>
+  <meta name="description" content="Portfolio profissional de Seu Nome, desenvolvedor web">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="text-dark">Filipe</span><span class="text-blue">Franco</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  
+  <section id="home" class="hero">
+    <div class="bg-gradient"></div>
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right">
+          <h1 class="hero-title">
+            Olá, eu sou <span class="text-blue animate-pulse">Filipe Franco</span>
+            <span class="hero-subtitle">Desenvolvedor Web</span>
+          </h1>
+          <p class="hero-description">
+            Desenvolvedor web especializado em criar experiências digitais elegantes e funcionais para a web moderna.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Entre em contato <i data-lucide="arrow-right" class="icon-sm"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              Ver projetos
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <div class="profile-image">
+            <img src="images/305ec8b0-7668-4e7e-b25e-38cc304416a3.jpg" alt="Seu Nome" />
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <a href="#about">
+          <span>Rolar para baixo</span>
+          <i data-lucide="chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Conheça um pouco mais sobre minha trajetória e experiência</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="about-heading">Minha Jornada</h3>
+          <p>
+            Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais elegantes e funcionais. Com mais
+            de X anos de experiência no desenvolvimento de aplicações web, tenho trabalhado com as tecnologias mais
+            recentes para entregar soluções de alta qualidade.
+          </p>
+          <p>
+            Minha jornada na programação começou em [ano], e desde então venho aprimorando minhas habilidades e
+            expandindo meu conhecimento em diversas áreas do desenvolvimento web. Acredito que a combinação de design
+            intuitivo e código limpo é essencial para criar produtos digitais excepcionais.
+          </p>
+          <p>
+            Quando não estou codificando, gosto de [seus hobbies ou interesses]. Acredito que essas atividades me
+            ajudam a manter uma perspectiva equilibrada e criativa em meu trabalho.
+          </p>
+        </div>
+
+        <div class="about-cards" data-aos="fade-left" data-aos-delay="200">
+          <div class="card card-hover">
+            <div class="card-icon">
+              <div class="icon-bg">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Educação</h4>
+            <p class="card-text">Bacharel em Ciência da Computação</p>
+            <p class="card-subtext">Universidade XYZ, 20XX-20XX</p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="card-icon">
+              <div class="icon-bg">
+                <i data-lucide="briefcase"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Experiência</h4>
+            <p class="card-text">Desenvolvedor Web Sênior</p>
+            <p class="card-subtext">Empresa XYZ, 20XX-Presente</p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="card-icon">
+              <div class="icon-bg">
+                <i data-lucide="award"></i>
+              </div>
+            </div>
+            <h4 class="card-title">Certificações</h4>
+            <p class="card-text">Certificação em Desenvolvimento Web</p>
+            <p class="card-subtext">Instituição XYZ, 20XX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Tecnologias e ferramentas com as quais trabalho</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+          <h3 class="skill-name">HTML5</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="90%"></div>
+          </div>
+          <div class="skill-percentage">90%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skill-name">CSS3</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="85%"></div>
+          </div>
+          <div class="skill-percentage">85%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="80%"></div>
+          </div>
+          <div class="skill-percentage">80%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skill-name">React</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="75%"></div>
+          </div>
+          <div class="skill-percentage">75%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <h3 class="skill-name">Node.js</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="65%"></div>
+          </div>
+          <div class="skill-percentage">65%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="skill-name">TypeScript</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="75%"></div>
+          </div>
+          <div class="skill-percentage">75%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <h3 class="skill-name">Git</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="80%"></div>
+          </div>
+          <div class="skill-percentage">80%</div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="skill-name">UI/UX Design</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="70%"></div>
+          </div>
+          <div class="skill-percentage">70%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Alguns dos trabalhos que desenvolvi recentemente</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="E-commerce Moderno">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Moderno</h3>
+            <p class="project-description">
+              Plataforma de e-commerce completa com sistema de pagamento, carrinho de compras e painel administrativo.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                Ver Demo <i data-lucide="external-link" class="icon-xs"></i>
+              </a>
+              <a href="#" class="project-link">
+                Código <i data-lucide="github" class="icon-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="Dashboard Analítico">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dashboard Analítico</h3>
+            <p class="project-description">
+              Dashboard interativo para visualização de dados com gráficos personalizáveis e relatórios em tempo real.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                Ver Demo <i data-lucide="external-link" class="icon-xs"></i>
+              </a>
+              <a href="#" class="project-link">
+                Código <i data-lucide="github" class="icon-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="https://placehold.co/600x400" alt="Aplicativo de Gestão">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Aplicativo de Gestão</h3>
+            <p class="project-description">
+              Sistema de gestão empresarial com módulos de finanças, RH, estoque e atendimento ao cliente.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                Ver Demo <i data-lucide="external-link" class="icon-xs"></i>
+              </a>
+              <a href="#" class="project-link">
+                Código <i data-lucide="github" class="icon-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+        <a href="#" class="view-more">
+          Ver mais projetos <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-form" data-aos="fade-right" data-aos-delay="100">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
+          <div class="info-section">
+            <h3 class="info-title">Informações de Contato</h3>
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Email</h4>
+                  <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i data-lucide="github"></i>
+                </div>
+                <div class="info-content">
+                  <h4>GitHub</h4>
+                  <a href="#">github.com/seuusuario</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <i data-lucide="linkedin"></i>
+                </div>
+                <div class="info-content">
+                  <h4>LinkedIn</h4>
+                  <a href="#">linkedin.com/in/seuperfil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="availability-card">
+            <h3 class="info-title">Disponibilidade</h3>
+            <p>
+              Atualmente estou disponível para projetos freelance e oportunidades de trabalho em tempo integral.
+            </p>
+            <p>
+              Tempo de resposta típico: <span class="highlight">24 horas</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <span class="text-white">Seu</span><span class="text-blue-light">Nome</span>
+          </div>
+          <p class="copyright">© <span id="currentYear"></span> Todos os direitos reservados.</p>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:seu.email@exemplo.com" class="social-link" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Desenvolvido com HTML, CSS e JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
