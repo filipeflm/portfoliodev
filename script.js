@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set current year in footer
     document.getElementById("currentYear").textContent = new Date().getFullYear()
   
+    // Check for form submission success
+    if (window.location.href.includes('?success=true')) {
+      alert('Mensagem enviada com sucesso! Obrigado pelo contato.')
+      // Remove the success parameter from URL
+      window.history.replaceState({}, document.title, window.location.pathname + window.location.hash)
+    }
+  
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
     const mainNav = document.querySelector(".main-nav")
@@ -79,29 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
         animateSkillBars()
       }
     })
-  
-    // Form submission
-    const contactForm = document.getElementById("contactForm")
-    if (contactForm) {
-      contactForm.addEventListener("submit", (e) => {
-        e.preventDefault()
-  
-        // Get form values
-        const name = document.getElementById("name").value
-        const email = document.getElementById("email").value
-        const message = document.getElementById("message").value
-  
-        // Here you would typically send the form data to a server
-        // For demo purposes, we'll just log it and show an alert
-        console.log("Form submitted:", { name, email, message })
-  
-        // Show success message
-        alert("Mensagem enviada com sucesso! Obrigado pelo contato.")
-  
-        // Reset form
-        contactForm.reset()
-      })
-    }
   
     // Add active class to nav links based on scroll position
     const sections = document.querySelectorAll("section")
