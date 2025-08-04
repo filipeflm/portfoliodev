@@ -504,52 +504,65 @@
   /* Skills Section */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
-  .skill-card {
+  .skills-categories {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .skill-category {
     background-color: white;
-    padding: 1.5rem;
     border-radius: var(--border-radius);
+    padding: 1.5rem;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
   }
 
-  .skill-card:hover {
-    transform: translateY(-5px);
+  .skill-category:hover {
+    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
   }
 
-  .skill-name {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .skill-card:hover .skill-name {
+  .category-title {
+    font-size: 1.125rem;
     color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 
-  .skill-bar {
-    height: 0.5rem;
-    background-color: #f1f1f1;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
-  .skill-progress {
-    height: 100%;
+  .skill-tag {
     background-color: var(--color-primary);
-    border-radius: 1rem;
-    width: 0;
-    transition: width 1.5s ease-out;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition);
   }
 
-  .skill-percentage {
-    text-align: right;
-    font-size: 0.875rem;
-    color: var(--color-text-light);
+  .skill-tag:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+  }
+
+  @media (min-width: 768px) {
+    .skills-categories {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .skills-categories {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   /* Projects Section */

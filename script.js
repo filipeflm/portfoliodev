@@ -65,28 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Animate skill bars when they come into view
-    const animateSkillBars = () => {
-      const skillBars = document.querySelectorAll(".skill-progress")
-      skillBars.forEach((bar) => {
-        const width = bar.getAttribute("data-width")
-        bar.style.width = width
-      })
-    }
-  
-    // Initial animation for visible skill bars
-    setTimeout(animateSkillBars, 500)
-  
-    // Re-trigger animations on scroll
-    window.addEventListener("scroll", () => {
-      const scrollPosition = window.scrollY + window.innerHeight
-      const skillsSection = document.getElementById("skills")
-  
-      if (skillsSection && scrollPosition > skillsSection.offsetTop) {
-        animateSkillBars()
-      }
-    })
-  
     // Add active class to nav links based on scroll position
     const sections = document.querySelectorAll("section")
     const navLinks = document.querySelectorAll(".nav-link")
