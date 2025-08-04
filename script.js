@@ -19,6 +19,30 @@ document.addEventListener("DOMContentLoaded", () => {
       window.history.replaceState({}, document.title, window.location.pathname + window.location.hash)
     }
   
+    // Language switcher functionality
+    const languageButtons = document.querySelectorAll('.lang-btn')
+    
+    languageButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const selectedLang = this.getAttribute('data-lang')
+        
+        // Remove active class from all buttons
+        languageButtons.forEach(btn => {
+          btn.removeAttribute('data-active')
+        })
+        
+        // Add active class to clicked button
+        this.setAttribute('data-active', 'true')
+        
+        // Redirect to appropriate language version
+        if (selectedLang === 'pt') {
+          window.location.href = 'index-pt.html'
+        } else if (selectedLang === 'en') {
+          window.location.href = 'index.html'
+        }
+      })
+    })
+  
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
     const mainNav = document.querySelector(".main-nav")
